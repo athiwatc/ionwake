@@ -345,6 +345,11 @@ export class Game {
       img.onload = () => {
         sheet.ready = true;
       };
+      img.onerror = () => {
+        if (!img.src.includes("githubusercontent.com")) {
+          img.src = `https://raw.githubusercontent.com/athiwatc/ionwake/main/public/sprites/${name}.png`;
+        }
+      };
       img.src = `/sprites/${name}.png`;
       this.sheets.set(name, sheet);
     }
