@@ -1,0 +1,16 @@
+node_modules
+.vercel
+artifacts
+screenshots
+assets
+*.log
+.grok/preview.log
+.grok/preview.pid
+.grok/skills
+.grok/references
+.grok/status
+.grok/*.png
+.grok/*.html
+.DS_Store
+dist
+.nitro
